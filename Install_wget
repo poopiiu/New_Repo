@@ -1,0 +1,6 @@
+---
+- name: Install Wget Package On CentOS 7
+  hosts: linux-manager
+  tasks:
+   - name: Install Wget
+     yum: name=wget state=present
